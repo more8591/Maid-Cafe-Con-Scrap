@@ -1,0 +1,260 @@
+[
+    {
+        "label": "customtkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "customtkinter",
+        "description": "customtkinter",
+        "detail": "customtkinter",
+        "documentation": {}
+    },
+    {
+        "label": "eventList",
+        "importPath": "test",
+        "description": "test",
+        "isExtraImport": true,
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "CSSSelector",
+        "importPath": "lxml.cssselect",
+        "description": "lxml.cssselect",
+        "isExtraImport": true,
+        "detail": "lxml.cssselect",
+        "documentation": {}
+    },
+    {
+        "label": "requests,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests.",
+        "description": "requests.",
+        "detail": "requests.",
+        "documentation": {}
+    },
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "button_function",
+        "kind": 2,
+        "importPath": "gui_test",
+        "description": "gui_test",
+        "peekOfCode": "def button_function():\n    print(\"button pressed\")\ndef getEventList():\n    x = 0\n    y = 0\n    for i in range(0, len(eventList)):\n        x = 0.1 + x\n        y = 0.1 + y\n        customtkinter.CTkLabel(master=app, text=eventList[i]['event name'], fg_color=\"transparent\").place(relx=x, rely=y, anchor=customtkinter.S)\n# Use CTkButton instead of tkinter Button",
+        "detail": "gui_test",
+        "documentation": {}
+    },
+    {
+        "label": "getEventList",
+        "kind": 2,
+        "importPath": "gui_test",
+        "description": "gui_test",
+        "peekOfCode": "def getEventList():\n    x = 0\n    y = 0\n    for i in range(0, len(eventList)):\n        x = 0.1 + x\n        y = 0.1 + y\n        customtkinter.CTkLabel(master=app, text=eventList[i]['event name'], fg_color=\"transparent\").place(relx=x, rely=y, anchor=customtkinter.S)\n# Use CTkButton instead of tkinter Button\nbutton = customtkinter.CTkButton(master=app, text=\"CTkButton\", command=getEventList)\nbutton.place(relx=0.5, rely=0.5, anchor=customtkinter.CENTER)",
+        "detail": "gui_test",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "gui_test",
+        "description": "gui_test",
+        "peekOfCode": "app = customtkinter.CTk()  # create CTk window like you do with the Tk window\napp.geometry(\"1280x720\")\ndef button_function():\n    print(\"button pressed\")\ndef getEventList():\n    x = 0\n    y = 0\n    for i in range(0, len(eventList)):\n        x = 0.1 + x\n        y = 0.1 + y",
+        "detail": "gui_test",
+        "documentation": {}
+    },
+    {
+        "label": "button",
+        "kind": 5,
+        "importPath": "gui_test",
+        "description": "gui_test",
+        "peekOfCode": "button = customtkinter.CTkButton(master=app, text=\"CTkButton\", command=getEventList)\nbutton.place(relx=0.5, rely=0.5, anchor=customtkinter.CENTER)\napp.mainloop()",
+        "detail": "gui_test",
+        "documentation": {}
+    },
+    {
+        "label": "bs",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "bs = BeautifulSoup\nrq = requests\ncss = CSSSelector\n## ingridients\n# https://animecons.com/events/schedule.php?loc=usOH&year=2023\nbase_url = 'https://animecons.com/events/schedule.php'\nprio_locations = ['OH', 'IN', 'IL', 'KY']\nmeh_locations = ['TX', 'NYC']\nprint('What state?')\nstate = input()",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "rq",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "rq = requests\ncss = CSSSelector\n## ingridients\n# https://animecons.com/events/schedule.php?loc=usOH&year=2023\nbase_url = 'https://animecons.com/events/schedule.php'\nprio_locations = ['OH', 'IN', 'IL', 'KY']\nmeh_locations = ['TX', 'NYC']\nprint('What state?')\nstate = input()\nprint('What year?')",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "css",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "css = CSSSelector\n## ingridients\n# https://animecons.com/events/schedule.php?loc=usOH&year=2023\nbase_url = 'https://animecons.com/events/schedule.php'\nprio_locations = ['OH', 'IN', 'IL', 'KY']\nmeh_locations = ['TX', 'NYC']\nprint('What state?')\nstate = input()\nprint('What year?')\nyear = input()",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "base_url",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "base_url = 'https://animecons.com/events/schedule.php'\nprio_locations = ['OH', 'IN', 'IL', 'KY']\nmeh_locations = ['TX', 'NYC']\nprint('What state?')\nstate = input()\nprint('What year?')\nyear = input()\nurl = base_url + '?loc=us' + state + '&year=' + year\n## GET PAGE ##\nsrc = rq.get(url).text",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "prio_locations",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "prio_locations = ['OH', 'IN', 'IL', 'KY']\nmeh_locations = ['TX', 'NYC']\nprint('What state?')\nstate = input()\nprint('What year?')\nyear = input()\nurl = base_url + '?loc=us' + state + '&year=' + year\n## GET PAGE ##\nsrc = rq.get(url).text\nfrom_page = bs(src, 'lxml')",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "meh_locations",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "meh_locations = ['TX', 'NYC']\nprint('What state?')\nstate = input()\nprint('What year?')\nyear = input()\nurl = base_url + '?loc=us' + state + '&year=' + year\n## GET PAGE ##\nsrc = rq.get(url).text\nfrom_page = bs(src, 'lxml')\n###################",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "state",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "state = input()\nprint('What year?')\nyear = input()\nurl = base_url + '?loc=us' + state + '&year=' + year\n## GET PAGE ##\nsrc = rq.get(url).text\nfrom_page = bs(src, 'lxml')\n###################\n## Ready to cook ##\n###################",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "year",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "year = input()\nurl = base_url + '?loc=us' + state + '&year=' + year\n## GET PAGE ##\nsrc = rq.get(url).text\nfrom_page = bs(src, 'lxml')\n###################\n## Ready to cook ##\n###################\nevent_row = '#ConListTable tbody tr'\nevent_row_path = event_row + ' td a'",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "url = base_url + '?loc=us' + state + '&year=' + year\n## GET PAGE ##\nsrc = rq.get(url).text\nfrom_page = bs(src, 'lxml')\n###################\n## Ready to cook ##\n###################\nevent_row = '#ConListTable tbody tr'\nevent_row_path = event_row + ' td a'\nevent_date = event_row + ' > td:nth-of-type(2)'",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "src",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "src = rq.get(url).text\nfrom_page = bs(src, 'lxml')\n###################\n## Ready to cook ##\n###################\nevent_row = '#ConListTable tbody tr'\nevent_row_path = event_row + ' td a'\nevent_date = event_row + ' > td:nth-of-type(2)'\nevent_loc = event_row + ' > td:nth-of-type(3)'\nevents = from_page.select(event_row_path)",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "from_page",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "from_page = bs(src, 'lxml')\n###################\n## Ready to cook ##\n###################\nevent_row = '#ConListTable tbody tr'\nevent_row_path = event_row + ' td a'\nevent_date = event_row + ' > td:nth-of-type(2)'\nevent_loc = event_row + ' > td:nth-of-type(3)'\nevents = from_page.select(event_row_path)\ndates = from_page.select(event_date)",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "event_row",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "event_row = '#ConListTable tbody tr'\nevent_row_path = event_row + ' td a'\nevent_date = event_row + ' > td:nth-of-type(2)'\nevent_loc = event_row + ' > td:nth-of-type(3)'\nevents = from_page.select(event_row_path)\ndates = from_page.select(event_date)\nlocation = from_page.select(event_loc)\ncsvData = [\n    # Headers\n    {\"column_01\":\"Event Name\", \"column_02\":\"Google Maps URL\", \"column_03\": \"Event Dates\", \"column_04\":\"Event Convention Name\", \"column_05\":\"Event City/State\", \"column_06\":\"Convention Website URL\"}",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "event_row_path",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "event_row_path = event_row + ' td a'\nevent_date = event_row + ' > td:nth-of-type(2)'\nevent_loc = event_row + ' > td:nth-of-type(3)'\nevents = from_page.select(event_row_path)\ndates = from_page.select(event_date)\nlocation = from_page.select(event_loc)\ncsvData = [\n    # Headers\n    {\"column_01\":\"Event Name\", \"column_02\":\"Google Maps URL\", \"column_03\": \"Event Dates\", \"column_04\":\"Event Convention Name\", \"column_05\":\"Event City/State\", \"column_06\":\"Convention Website URL\"}\n]",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "event_date",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "event_date = event_row + ' > td:nth-of-type(2)'\nevent_loc = event_row + ' > td:nth-of-type(3)'\nevents = from_page.select(event_row_path)\ndates = from_page.select(event_date)\nlocation = from_page.select(event_loc)\ncsvData = [\n    # Headers\n    {\"column_01\":\"Event Name\", \"column_02\":\"Google Maps URL\", \"column_03\": \"Event Dates\", \"column_04\":\"Event Convention Name\", \"column_05\":\"Event City/State\", \"column_06\":\"Convention Website URL\"}\n]\nprint('appending ' +  str(len(events)) + ' events to csv file.')",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "event_loc",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "event_loc = event_row + ' > td:nth-of-type(3)'\nevents = from_page.select(event_row_path)\ndates = from_page.select(event_date)\nlocation = from_page.select(event_loc)\ncsvData = [\n    # Headers\n    {\"column_01\":\"Event Name\", \"column_02\":\"Google Maps URL\", \"column_03\": \"Event Dates\", \"column_04\":\"Event Convention Name\", \"column_05\":\"Event City/State\", \"column_06\":\"Convention Website URL\"}\n]\nprint('appending ' +  str(len(events)) + ' events to csv file.')\nwith open('anime_con_scrap_' + state + '_' + year + '.csv', mode='w', newline='') as csvfile:",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "events",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "events = from_page.select(event_row_path)\ndates = from_page.select(event_date)\nlocation = from_page.select(event_loc)\ncsvData = [\n    # Headers\n    {\"column_01\":\"Event Name\", \"column_02\":\"Google Maps URL\", \"column_03\": \"Event Dates\", \"column_04\":\"Event Convention Name\", \"column_05\":\"Event City/State\", \"column_06\":\"Convention Website URL\"}\n]\nprint('appending ' +  str(len(events)) + ' events to csv file.')\nwith open('anime_con_scrap_' + state + '_' + year + '.csv', mode='w', newline='') as csvfile:\n    for i in range(0, len(events)):",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "dates",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "dates = from_page.select(event_date)\nlocation = from_page.select(event_loc)\ncsvData = [\n    # Headers\n    {\"column_01\":\"Event Name\", \"column_02\":\"Google Maps URL\", \"column_03\": \"Event Dates\", \"column_04\":\"Event Convention Name\", \"column_05\":\"Event City/State\", \"column_06\":\"Convention Website URL\"}\n]\nprint('appending ' +  str(len(events)) + ' events to csv file.')\nwith open('anime_con_scrap_' + state + '_' + year + '.csv', mode='w', newline='') as csvfile:\n    for i in range(0, len(events)):\n        print('creating spreadsheet row for [' + events[i].text + '].....')",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "location",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "location = from_page.select(event_loc)\ncsvData = [\n    # Headers\n    {\"column_01\":\"Event Name\", \"column_02\":\"Google Maps URL\", \"column_03\": \"Event Dates\", \"column_04\":\"Event Convention Name\", \"column_05\":\"Event City/State\", \"column_06\":\"Convention Website URL\"}\n]\nprint('appending ' +  str(len(events)) + ' events to csv file.')\nwith open('anime_con_scrap_' + state + '_' + year + '.csv', mode='w', newline='') as csvfile:\n    for i in range(0, len(events)):\n        print('creating spreadsheet row for [' + events[i].text + '].....')\n        ev_name = events[i].text.strip(' 2023')",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "csvData",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "csvData = [\n    # Headers\n    {\"column_01\":\"Event Name\", \"column_02\":\"Google Maps URL\", \"column_03\": \"Event Dates\", \"column_04\":\"Event Convention Name\", \"column_05\":\"Event City/State\", \"column_06\":\"Convention Website URL\"}\n]\nprint('appending ' +  str(len(events)) + ' events to csv file.')\nwith open('anime_con_scrap_' + state + '_' + year + '.csv', mode='w', newline='') as csvfile:\n    for i in range(0, len(events)):\n        print('creating spreadsheet row for [' + events[i].text + '].....')\n        ev_name = events[i].text.strip(' 2023')\n        ev_date = dates[i].text.replace(', 2023', '')",
+        "detail": "test",
+        "documentation": {}
+    }
+]
